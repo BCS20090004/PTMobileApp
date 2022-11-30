@@ -113,11 +113,11 @@
                           Stroke="grey" ></Line>
 
                     <Label Text="Other Van Gogh Works"
-               Margin="20,0,0,0"
-               TextColor="White"
-               FontSize="Subtitle"
-               Grid.Row="7"
-               Grid.ColumnSpan="4"></Label>
+                           Margin="20,0,0,0"
+                           TextColor="White"
+                           FontSize="Subtitle"
+                           Grid.Row="7"
+                           Grid.ColumnSpan="4"></Label>
 
         <Grid Grid.Row="8" Grid.ColumnSpan="4">
             <Grid.ColumnDefinitions>
@@ -129,9 +129,9 @@
                     <VerticalStackLayout>
                     <Image Source="pic1.jpg"></Image>
                     <Label TextColor="White"
-                       Text="Peach Tree in Blossom"></Label>
+                       Text="The Strarry Night"></Label>
                     <Label TextColor="Grey"
-                       Text="$950000"></Label>
+                       Text="%990000"></Label>
                     </VerticalStackLayout>
                     <VerticalStackLayout>
                         <Image Source="pic2.jpg"></Image>
@@ -155,9 +155,9 @@
                     <VerticalStackLayout>
                         <Image Source="pic4.jpg"></Image>
                         <Label TextColor="White"
-                       Text="Peach Tree in Blossom"></Label>
+                       Text="Sunflowers"></Label>
                         <Label TextColor="Grey"
-                       Text="$950000"></Label>
+                       Text="$50000"></Label>
                     </VerticalStackLayout>
                 </VerticalStackLayout>
 
