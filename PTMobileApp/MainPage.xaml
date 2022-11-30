@@ -140,6 +140,20 @@
                         <Label TextColor="Grey"
                        Text="$192000"></Label>
                     </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Image Source="pic3.jpg"></Image>
+                        <Label TextColor="White"
+                       Text="Peach Tree in Blossom"></Label>
+                        <Label TextColor="Grey"
+                       Text="$950000"></Label>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Image Source="pic4.jpg"></Image>
+                        <Label TextColor="White"
+                       Text="Sunflowers"></Label>
+                        <Label TextColor="Grey"
+                       Text="$50000"></Label>
+                    </VerticalStackLayout>
                 </VerticalStackLayout>
                 
             </ScrollView>
@@ -158,6 +172,20 @@
                        Text="Sunflowers"></Label>
                         <Label TextColor="Grey"
                        Text="$50000"></Label>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Image Source="pic1.jpg"></Image>
+                        <Label TextColor="White"
+                       Text="The Strarry Night"></Label>
+                        <Label TextColor="Grey"
+                       Text="%990000"></Label>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Image Source="pic2.jpg"></Image>
+                        <Label TextColor="White"
+                       Text="cafe Terrace at Night"></Label>
+                        <Label TextColor="Grey"
+                       Text="$192000"></Label>
                     </VerticalStackLayout>
                 </VerticalStackLayout>
 
