@@ -25,19 +25,18 @@
                     </Grid.ColumnDefinitions>
 
                     <VerticalStackLayout Grid.Row="1" Grid.ColumnSpan="4">
-                        <Frame 
-                CornerRadius="90"       
-                BorderColor="Orange" 
-                HeightRequest="80"
-                WidthRequest="80"
-                IsClippedToBounds="True"
+            <Border Stroke="#C49B33"
+                    StrokeThickness="4"
+                    StrokeShape="ellipse"
+                HeightRequest="100"
+                WidthRequest="100"
                 HorizontalOptions="Center"
                 VerticalOptions="Center">
-                            <Image Source="pic.png"
-                       HeightRequest="70"
-                       WidthRequest="70"
+                <Image Source="pic.png"
+                       HeightRequest="100"
+                       WidthRequest="100"
                        ></Image>
-                        </Frame>
+                        </Border>
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Grid.Row="2" Grid.ColumnSpan="4">
@@ -52,11 +51,13 @@
                     </VerticalStackLayout>
 
                     <HorizontalStackLayout Margin="20,0,20,0" Grid.Row="3" Grid.ColumnSpan="4">
-                        <Label LineBreakMode="TailTruncation"
-                   FontSize="14"
-                   TextColor="White"  
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
+                        <Label 
+                            LineBreakMode="TailTruncation"
+                            FontSize="14"
+                            TextColor="White"  
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"
+                            MaxLines="2"
                    Text="was a Dutch Post-Impressionist painter who...">
                         </Label>
                         <Label VerticalOptions="Center"
