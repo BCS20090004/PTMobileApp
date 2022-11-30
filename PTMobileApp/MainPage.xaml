@@ -133,9 +133,9 @@
                     <VerticalStackLayout>
                         <Image Source="pic2.jpg"></Image>
                         <Label TextColor="White"
-                       Text="Peach Tree in Blossom"></Label>
+                       Text="cafe Terrace at Night"></Label>
                         <Label TextColor="Grey"
-                       Text="$950000"></Label>
+                       Text="$192000"></Label>
                     </VerticalStackLayout>
                 </VerticalStackLayout>
                 
