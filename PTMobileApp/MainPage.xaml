@@ -140,7 +140,7 @@
                 </VerticalStackLayout>
                 
             </ScrollView>
-            <ScrollView Grid.Column="1"Margin="10,0,0,0">
+            <ScrollView Grid.Column="1" Margin="10,0,0,0">
                 <VerticalStackLayout Grid.Column="0">
                     <VerticalStackLayout>
                         <Image Source="pic3.jpg"></Image>
