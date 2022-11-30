@@ -48,4 +48,16 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\pic.png" />
+	  <None Remove="Resources\Images\pic1.jpg" />
+	  <None Remove="Resources\Images\pic2.jpg" />
+	  <None Remove="Resources\Images\pic3.jpg" />
+	  <None Remove="Resources\Images\pic4.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Maui" Version="1.2.0" />
+	</ItemGroup>
+
 </Project>

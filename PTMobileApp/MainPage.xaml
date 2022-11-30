@@ -1,41 +1,164 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PTMobileApp.MainPage">
+             x:Class="PTMobileApp.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black">
+    
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="110"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="120"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+                    <VerticalStackLayout Grid.Row="1" Grid.ColumnSpan="4">
+                        <Frame 
+                CornerRadius="90"       
+                BorderColor="Orange" 
+                HeightRequest="80"
+                WidthRequest="80"
+                IsClippedToBounds="True"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+                            <Image Source="pic.png"
+                       HeightRequest="70"
+                       WidthRequest="70"
+                       ></Image>
+                        </Frame>
+                    </VerticalStackLayout>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+                    <VerticalStackLayout Grid.Row="2" Grid.ColumnSpan="4">
+                        <Label FontSize="Title"
+                   TextColor="White"
+                   Text="Vincent van Gogh"
+                   HorizontalOptions="Center"></Label>
+                        <Label FontSize="Subtitle"
+                   TextColor="LightGray"
+                   Text="Dutch, 1853-1890"
+                   HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+                    <HorizontalStackLayout Margin="20,0,20,0" Grid.Row="3" Grid.ColumnSpan="4">
+                        <Label LineBreakMode="TailTruncation"
+                   FontSize="14"
+                   TextColor="White"  
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Text="was a Dutch Post-Impressionist painter who...">
+                        </Label>
+                        <Label VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Text="Read More" 
+                   TextColor="OrangeRed">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                      CommandParameter="https://en.wikipedia.org/wiki/Vincent_van_Gogh" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+                    <Line Grid.Row="4"  Grid.ColumnSpan="4"   
+            X1="500"
+                   Y1="0"
+                   X2="0"
+                   Y2="0"
+                   Stroke="grey" ></Line>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                    <VerticalStackLayout Grid.Row="5" Grid.Column="0" HorizontalOptions="Center">
+                        <Label Text="$7.5m"
+                       TextColor="White"></Label>
+                        <Label Text="Record"
+                       TextColor="Grey"></Label>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Grid.Row="5" Grid.Column="1" HorizontalOptions="Center">
+                        <Label Text="$3.5m"
+                       TextColor="White"></Label>
+                        <Label Text="Average"
+                       TextColor="Grey"></Label>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Grid.Row="5" Grid.Column="2" HorizontalOptions="Center">
+                        <Label Text="+592%"
+                       TextColor="White"></Label>
+                        <Label Text="General"
+                       TextColor="Grey"></Label>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Grid.Row="5" Grid.Column="3" HorizontalOptions="Center">
+                        <Label Text="12"
+                       TextColor="White"></Label>
+                        <Label Text="Items"
+                       TextColor="Grey"></Label>
+                    </VerticalStackLayout>
 
-        </VerticalStackLayout>
-    </ScrollView>
+                    <Line Grid.Row="6"  Grid.ColumnSpan="4"   
+            X1="500"
+                   Y1="0"
+                   X2="0"
+                   Y2="0"
+                   Stroke="grey" ></Line>
 
+                    <Label Text="Other Van Gogh Works"
+               Margin="20,0,0,0"
+               TextColor="White"
+               FontSize="Subtitle"
+               Grid.Row="7"
+               Grid.ColumnSpan="4"></Label>
+
+        <Grid Grid.Row="8" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ScrollView Grid.Column="0" Margin="10,0,10,0">
+            <VerticalStackLayout Grid.Column="0">
+                    <VerticalStackLayout>
+                    <Image Source="pic1.jpg"></Image>
+                    <Label TextColor="White"
+                       Text="Peach Tree in Blossom"></Label>
+                    <Label TextColor="Grey"
+                       Text="$950000"></Label>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Image Source="pic2.jpg"></Image>
+                        <Label TextColor="White"
+                       Text="Peach Tree in Blossom"></Label>
+                        <Label TextColor="Grey"
+                       Text="$950000"></Label>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+                
+            </ScrollView>
+            <ScrollView Grid.Column="1"Margin="10,0,0,0">
+                <VerticalStackLayout Grid.Column="0">
+                    <VerticalStackLayout>
+                        <Image Source="pic3.jpg"></Image>
+                        <Label TextColor="White"
+                       Text="Peach Tree in Blossom"></Label>
+                        <Label TextColor="Grey"
+                       Text="$950000"></Label>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout>
+                        <Image Source="pic4.jpg"></Image>
+                        <Label TextColor="White"
+                       Text="Peach Tree in Blossom"></Label>
+                        <Label TextColor="Grey"
+                       Text="$950000"></Label>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+
+            </ScrollView>
+        </Grid>
+        </Grid>
 </ContentPage>
