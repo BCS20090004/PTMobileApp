@@ -71,12 +71,13 @@
                         </Label>
                     </HorizontalStackLayout>
 
-                    <Line Grid.Row="4"  Grid.ColumnSpan="4"   
-            X1="500"
-                   Y1="0"
-                   X2="0"
-                   Y2="0"
-                   Stroke="grey" ></Line>
+                    <Line Grid.Row="4"  
+                          Grid.ColumnSpan="4"   
+                          X1="500"
+                          Y1="0"
+                          X2="0"
+                          Y2="0"
+                          Stroke="grey" ></Line>
 
                     <VerticalStackLayout Grid.Row="5" Grid.Column="0" HorizontalOptions="Center">
                         <Label Text="$7.5m"
@@ -103,12 +104,13 @@
                        TextColor="Grey"></Label>
                     </VerticalStackLayout>
 
-                    <Line Grid.Row="6"  Grid.ColumnSpan="4"   
-            X1="500"
-                   Y1="0"
-                   X2="0"
-                   Y2="0"
-                   Stroke="grey" ></Line>
+                    <Line Grid.Row="6"  
+                          Grid.ColumnSpan="4"   
+                          X1="500"
+                          Y1="0"
+                          X2="0"
+                          Y2="0"
+                          Stroke="grey" ></Line>
 
                     <Label Text="Other Van Gogh Works"
                Margin="20,0,0,0"
